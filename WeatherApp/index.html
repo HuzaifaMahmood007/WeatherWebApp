@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="side-menu">
+      <div class="logo">⛅️ Weather App</div>
+      <ul>
+        <li><a href="index.html" id="dashboard-link">Dashboard</a></li>
+        <li><a href="tables.html" id="tables-link">Tables</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="weather-widget" id="weather-widget">
+        <h2>Get Weather</h2>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="get-weather">Get Weather</button>
+        <div class="unit-toggle">
+          <label for="unit">Select Unit:</label>
+          <select id="unit">
+            <option value="metric">Celsius</option>
+            <option value="imperial">Fahrenheit</option>
+          </select>
+        </div>
+        <div id="weather-data"></div>
+      </div>
+
+      <div class="forecast-section">
+        <h2>5-Day Forecast</h2>
+        <div class="filter-section">
+          <button id="sort-asc">Sort Temperatures (Ascending)</button>
+          <button id="sort-desc">Sort Temperatures (Descending)</button>
+          <button id="filter-rain">Show Only Rainy Days</button>
+          <button id="highest-temp">Show Day with Highest Temperature</button>
+        </div>
+        <div id="forecast-grid"></div>
+      </div>
+
+      <div class="charts-section">
+        <h2>Weather Visualizations</h2>
+        <div class="chart-container">
+          <h3>Temperature Bar Chart</h3>
+          <canvas id="temperatureChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Temperature Drought Chart</h3>
+          <canvas id="weatherConditionsChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Temperature Line Chart</h3>
+          <canvas id="temperatureLineChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
