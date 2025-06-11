@@ -1,5 +1,5 @@
 // OpenWeather API key
-const API_KEY = "1f5e999001d9b2cf796708245ae9ab3b";
+const API_KEY = "";
 
 // Chart objects
 let temperatureChart, weatherConditionsChart, temperatureLineChart;
