@@ -1,5 +1,6 @@
 # Weather Dashboard with Chatbot Integration
 
+
 ## Overview
 
 This project is a comprehensive Weather Dashboard web application that allows users to view real-time weather information for any city using the OpenWeather API. The application features a 5-day weather forecast, data visualizations using Chart.js, a table with pagination, and a chatbot that responds to weather-related queries using the Gemini API.
