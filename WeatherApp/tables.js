@@ -1,5 +1,5 @@
-const API_KEY = "1f5e999001d9b2cf796708245ae9ab3b";
-const GEMINI_API_KEY = "AIzaSyBcIezG_RAqxFHb9qfjDBzEU1bRivCm7RA"; // Replace with your actual Gemini API key
+const API_KEY = "";
+const GEMINI_API_KEY = ""; // Replace with your actual Gemini API key
 
 let forecastData = [];
 let currentPage = 1;
